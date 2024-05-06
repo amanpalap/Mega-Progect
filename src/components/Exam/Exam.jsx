@@ -3,19 +3,18 @@ import { ExamCard } from "../index";
 
 function Exam() {
   return (
-    <div className="h-fit">
-      <div className="w-full px-5 md:px-20 mt-5 md:mt-15 flex md:my-20 flex-wrap shadow-2xl justify-end items-center bg-transparent">
+    <div className="flex h-fit md:h-screen flex-wrap items-center justify-center">
+      <div className="w-full px-5 mt-10 md:px-20 md:mt-15 flex md:my-20 flex-wrap justify-center items-center bg-transparent">
 
+        <ExamCard Label="1st Year" Path="/1year" className="w-1/2"></ExamCard>
 
-<ExamCard Label="1st Year" Path="/1year" className="justify-end"></ExamCard>
+        <ExamCard Label="2st Year" Path="/2year" className="w-1/2"></ExamCard>
 
-<ExamCard Label="2st Year" Path="/2year" className="justify-end" classname="md:mr-64"></ExamCard>
+        <ExamCard Label="3st Year" Path="/3year" className="w-1/2"></ExamCard>
 
-<ExamCard Label="3st Year" Path="/3year" className="justify-start" classname="md:ml-64"></ExamCard>
+        <ExamCard Label="4st Year" Path="/4year" className="w-1/2"></ExamCard>
 
-<ExamCard Label="4st Year" Path="/4year" className="justify-start"></ExamCard>
-
-</div>
+      </div>
     </div>
   );
 }

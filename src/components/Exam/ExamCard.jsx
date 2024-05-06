@@ -8,8 +8,8 @@ function ExamCard({
   classname = "",
 }) {
   return (
-    <div className={`w-full hover:scale-105 px-20 items-center flex flex-wrap ${className}`}>
-      <div className={`w-full ${classname} md:w-2/5`}>
+    <div className={`hover:scale-105 md:px-10 items-center flex flex-wrap ${className}`}>
+
         <Link
           to={Path}
           className="flex h-36 hover:text-black w-full  mb-5 cursor-pointer hover:bg-white hover:bg-opacity-30 backdrop-blur-2xl text-center rounded-2xl shadow-2xl items-center justify-center"
@@ -20,7 +20,7 @@ function ExamCard({
             </h1>
           </div>
         </Link>
-      </div>
+
     </div>
   );
 }
